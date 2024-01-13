@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="cardFront">
+    <img src = "/images/bg-card-front.png" alt="">
+    <p id = "cardNum">0000 0000 0000 0000</p>
+    <p id = "cardName">Jane Appleseed</p>
+    <p id = "cardDate">00/00</p>
+    <div id="circles">
+      <div id="bigCircle"></div>
+      <div id="smallCircle"></div>
+    </div>
+  </div> 
+  <div class = "cardBack">
+    <img src = "/images/bg-card-back.png" alt="">
+    <p id = "cardCVC">000</p>
+  </div>
+  <div id = "formelements">
+    <div class="container">
+     <p>CARDHOLDER NAME </p>
+     <input type="text" id="name" class="inputs" placeholder="e.g. Jane Appleseed">
+     <p class="errtext"></p>
+     <p>CARD NUMBER</p>
+     <input type="text" id="num" class="inputs"  placeholder="e.g. 1234 5678 9123 0000">
+     <p class="errtext"></p>
+   </div>
+   <div class="container2">
+     <div class="texts">
+     <p>Exp. Date (MM/YY)</p>
+     <p id="CVV">CVC</p>
+     </div>
+     <div class="inputs">
+      <input type="text" class="inpts" id="mm" placeholder="MM">
+      <input type="text" class="inpts" id="yy" placeholder="YY">
+      <input type="text" class="inpts" id="cvv" placeholder="e.g. 123">
+     </div>
+     <div id="errtexts">
+      <p class="errtext"></p>
+      <p class="errtext"></p>
+      <p class="errtext"></p>
+     </div>
+    
+   </div>
+    <input type="button" id="confirm" value="Confirm">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

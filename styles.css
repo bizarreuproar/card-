@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+::placeholder{
+    opacity: 0.6;
+}
+
+input{
+    border-style: solid;
+    border-radius: 6px;
+    border-color: gray;
+}
+
+.inputs {
+    gap: 10px;
+    display: flex;
+}
+.cardFront{
+    position: absolute;
+    top: 100px;
+    left: 15%;
+}
+.cardBack{
+    position: absolute;
+    top: 375px;
+    left: 24%;
+}
+.cardFront p, .cardBack p{
+    position: absolute;
+    color: white;
+    letter-spacing: 2px;
+}
+#cardNum{
+    top: 140px;
+    left: 7.5%;
+    font-size: 31px;
+}
+#cardName{
+    top: 200px;
+    left: 7.5%;
+    text-transform: uppercase;
+}
+#cardDate{
+    top: 200px;
+    left: 82%;
+}
+#cardCVC{
+    top: 110px;
+    left: 80%;
+}
+#circles{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 22px;
+    left: 40px;
+    gap: 10px;
+}
+
+#bigCircle{
+    width: 50px;
+    height: 47px;
+    border-radius: 35px;
+    background-color: white;
+}
+
+#smallCircle{
+    width: 22px;
+    height: 20.5px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+#formelements{
+    margin-left: 62%;
+    padding: 25px;
+    width: 100%;
+}
+
+#formelements p{
+    margin-bottom: 5px;
+}
+
+.container {
+    width: 340px;
+}
+
+.container2{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container p{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.texts, .inputs{
+    display: flex;
+}
+
+.inputs{
+    gap: 10px;
+}
+#CVV {
+    margin-left: 76px;
+}
+.container2 p{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 100%;
+    height: 40px; 
+    margin-bottom: 15px; 
+    padding: 15px;
+}
+
+#confirm{
+    width: 340px;
+    height: 50px;
+    background-color: #511d6e;
+    color: white;
+    font-size: 18px;
+}
+
+#confirm:hover{
+    background-color: #220930;
+}
